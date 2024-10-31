@@ -1,10 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
-const {connectDB} = require("./config/database");
-
-dotenv.config();
+const {connectDB} = require("./app/config/database");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -14,11 +11,14 @@ app.use(bodyParser.json());
 
 connectDB();
 
-// const borrowerRoutes = require('./routes/borrowerRoutes');
-// const bookRoutes = require('./routes/bookRoutes');
+const userRoutes = require('./app/routes/user.routes');
+const bookRoutes = require('./app/routes/book.routes');
+const loanRoutes = require('./app/routes/loan.routes');
 
-// app.use('/api', borrowerRoutes);
-// app.use('/api/book', bookRoutes);
+app.use('/api/user', userRoutes);
+app.use('/api/book', bookRoutes);
+app.use('/api/loan', loanRoutes);
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

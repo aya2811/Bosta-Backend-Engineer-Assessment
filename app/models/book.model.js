@@ -1,7 +1,7 @@
 const {DataTypes } = require('sequelize');
-const db = require("../config/database");
+const {sequelize} = require("../config/database");
 
-const Book = db.define(
+const Book = sequelize.define(
   'Book',
   {
     title: {
@@ -14,6 +14,7 @@ const Book = db.define(
     },
     ISBN: {
         type: DataTypes.STRING,
+        allowNull: false
     },
     available_quantity: {
         type: DataTypes.INTEGER,

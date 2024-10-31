@@ -1,0 +1,2 @@
+loan_date,due_date,loan_status,Book.title,Book.author,Book.ISBN,User
+2024-10-02T13:17:41.329Z,2024-10-20T13:17:41.329Z,Overdue,book 1,author 1,132343654647,null

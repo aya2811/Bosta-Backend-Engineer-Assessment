@@ -1,9 +1,9 @@
 const {DataTypes } = require('sequelize');
-const db = require("../config/database");
+const {sequelize} = require("../config/database");
 
 
-const Borrower = db.define(
-  'Borrower',
+const User = sequelize.define(
+  'User',
   {
     name: {
       type: DataTypes.STRING,
@@ -18,17 +18,21 @@ const Borrower = db.define(
       }
     },
     password: {
-        type: DataTypes.STRING(8),
+        type: DataTypes.STRING,
         allowNull: false
     },
     registered_date: {
         type: DataTypes.DATE,
         defaultValue: DataTypes.NOW
+    },
+    role: {
+      type: DataTypes.ENUM(['Admin', 'Borrower']),
+      defaultValue: 'Borrower',
     }
 
   }
 );
-Borrower.sync({alter: true});
+User.sync({alter: true});
 
 
-module.exports = Borrower;
+module.exports = User;
