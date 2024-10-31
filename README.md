@@ -171,7 +171,7 @@ Bosta-Backend-Engineer-Assessment
     "refresh_token": "string",
     }
     ```
-    * `Response Schema`:
+* `Response Schema`:
     ```
     JSON {
     "message": "string",
