@@ -147,7 +147,7 @@ Bosta-Backend-Engineer-Assessment
     ```
 ##### SignIn Endpoint:
 
-* `Request Shema`: POST api/user/signin
+* `Request schema`: POST api/user/signin
 * `Request Body`:
     ```
     JSON {
@@ -164,7 +164,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Refresh Token Endpoint:
-* `Request Shema`: POST api/user/refresh-token
+* `Request schema`: POST api/user/refresh-token
 * `Request Body`:
     ```
     JSON {
@@ -181,7 +181,7 @@ Bosta-Backend-Engineer-Assessment
     ```
 
 ##### Read All Users Endpoint:
-* `Request Shema`: GET /api/user
+* `Request schema`: GET /api/user
 * `Authorization`: Bearer [Token]
 * `Response Schema`:
     ```
@@ -199,7 +199,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Update User Endpoint:
-* `Request Shema`: PUT api/user/{user_id}
+* `Request schema`: PUT api/user/{user_id}
 * `Authorization`: Bearer [Token]
 * `Request Body`:
     ```
@@ -216,7 +216,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Delete User Endpoint:
-* `Request Shema`: DELETE api/user/{user_id}
+* `Request schema`: DELETE api/user/{user_id}
 * `Authorization`: Bearer [Token]
 * `Response Schema`:
     ```
@@ -226,7 +226,7 @@ Bosta-Backend-Engineer-Assessment
     ```
 
 ##### Create Book Endpoint:
-* `Request Shema`: POST api/book
+* `Request schema`: POST api/book
 * `Authorization`: Bearer [Token]
 * `Request Body`:
     ```
@@ -246,7 +246,7 @@ Bosta-Backend-Engineer-Assessment
     ```
 
 ##### Read All Users Endpoint:
-* `Request Shema`: GET /api/book
+* `Request schema`: GET /api/book
 * `Authorization`: Bearer [Token]
 * `Response Schema`:
     ```
@@ -265,7 +265,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Update Book Endpoint:
-* `Request Shema`: PUT api/book/{book_id}
+* `Request schema`: PUT api/book/{book_id}
 * `Authorization`: Bearer [Token]
 * `Request Body`:
     ```
@@ -284,7 +284,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Delete Book Endpoint:
-* `Request Shema`: DELETE api/book/{book_id}
+* `Request schema`: DELETE api/book/{book_id}
 * `Authorization`: Bearer [Token]
 * `Response Schema`:
     ```
@@ -293,7 +293,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Search Book Endpoint:
-* `Request Shema`: GET api/book/search
+* `Request schema`: GET api/book/search
 * `Authorization`: Bearer [Token]
 * `Request Body`:
     ```
@@ -317,7 +317,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Borrow Book Endpoint:
-* `Request Shema`: POST api/loan/{borrower_id}
+* `Request schema`: POST api/loan/{borrower_id}
 * `Authorization`: Bearer [Token]
 * `Request Body`:
     ```
@@ -341,7 +341,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Return Book Endpoint:
-* `Request Shema`: POST api/loan/{borrower_id}
+* `Request schema`: POST api/loan/{borrower_id}
 * `Authorization`: Bearer [Token]
 * `Request Body`:
     ```
@@ -356,7 +356,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### List Books User Currently Have Endpoint:
-* `Request Shema`: GET api/loan/{borrower_id}
+* `Request schema`: GET api/loan/{borrower_id}
 * `Authorization`: Bearer [Token]
 * `Response Schema`:
     ```
@@ -373,7 +373,7 @@ Bosta-Backend-Engineer-Assessment
     ```
 
 ##### List Checked Out Books and By Whom Endpoint:
-* `Request Shema`: GET api/loan/all
+* `Request schema`: GET api/loan/all
 * `Authorization`: Bearer [Token]
 * `Response Schema`:
     ```
@@ -398,7 +398,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### List Overdue Books Endpoint:
-* `Request Shema`: GET api/loan/overdue
+* `Request schema`: GET api/loan/overdue
 * `Authorization`: Bearer [Token]
 * `Response Schema`:
      ```
@@ -423,7 +423,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Export Loans At Specific Period Endpoint:
-* `Request Shema`: GET api/loan/exportAt
+* `Request schema`: GET api/loan/exportAt
 * `Authorization`: Bearer [Token]
 * `Request Body`:
     ```
@@ -440,7 +440,7 @@ Bosta-Backend-Engineer-Assessment
     ```
 
 ##### Export Overdue At Last Month Endpoint:
-* `Request Shema`: GET api/loan/exportOverdueLastMonth
+* `Request schema`: GET api/loan/exportOverdueLastMonth
 * `Authorization`: Bearer [Token]
 * `Response Schema`:    
     ```
@@ -449,7 +449,7 @@ Bosta-Backend-Engineer-Assessment
     }
     ```
 ##### Export Borrows At Last Month Endpoint:
-* `Request Shema`: GET api/loan/exportBorrowsLastMonth
+* `Request schema`: GET api/loan/exportBorrowsLastMonth
 * `Authorization`: Bearer [Token]
 * `Response Schema`:    
     ```
